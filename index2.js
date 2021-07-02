@@ -12,7 +12,7 @@ const convertToDate = function(passTimes) {
 
 nextISSTimesForMyLocation()
   .then((array) => {
-    convertToDate(array)
+    convertToDate(array);
   })
   .catch((error) => {
     console.log("It didn't work: ", error.message);
